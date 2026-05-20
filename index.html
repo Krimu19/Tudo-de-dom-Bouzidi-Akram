@@ -14,8 +14,11 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+      
 </head>
 <body>
 <header>
@@ -30,94 +33,20 @@
     </nav>
 </header>
 
+<!-- SECTION HERO  -->
 <section class="hero-bg hero-container ">
-
-    <div class="hero-text">
-        <div class=" flex align-center gap20">
-            <h1 class="w-48">Tudo de Bom - Restaurant Brésilien à Marseille</h1>
-            <p>Voyagez au cœur de la gastronomie brésilienne <br>avec Tudo de Bom, votre restaurant à Marseille</p>
-        </div>
-            
-    
-
-    <div class="flex gap30">
-        <p>Follow us </p>
-        <i class="ph-fill ph-instagram-logo"></i>
-        <i class="ph-fill ph-messenger-logo"></i>
-        <i class="ph-fill ph-tiktok-logo"></i>
-    </div>
+  
+    <div id="hero" class="hero-text">
+    </div>      
 </div>
 
 <a href="#contact" class="flex align-center txt-none "></a>
 </section>
 
 <!-- plat -->
-
 <section class="container1000">
-    <h2 class="txt-center mgt30">NOS PLATS</h2>
-
-<div class="flex just-center gap20 mgt50">
-
-        <article class="w40 mgt50 card-plat">
-            <img src="asset/2148875285.jpg" alt="Croquis du projet" class="w100 br-20">
-        <div class="pad-30">
-            <h2 class="bold mgb15 clr-white">Feijoada</h2>
-                <div class="flex space-between align-center ">
-                    <p class="clr-white">
-                        Découvrez notre feijoada, un plat emblématique du Brésil. Un mélange délicieux de haricots noirs, de viande de porc et de saucisses, accompagné de riz et de légumes.
-                    </p>
-                </div>
-        </div>
-        </article>
-
-
-        <article class="w40 card-plat mgt50">
-            <img src="asset/2148875285.jpg" alt="Croquis du projet" class="w100 br-20">
-        <div class="pad-30">
-            <h2 class="bold mgb15 clr-white">Moqueca de Peixe</h2>
-                <div class="flex space-between align-center">
-                    <p class="clr-white">
-                        Succombez à la moqueca de peixe, un délicieux ragoût de poisson préparé avec du lait de coco, des tomates, des poivrons et des herbes fraîches. Un festin pour les amateurs de fruits de mer.
-                    </p>
-                </div>
-        </div>
-        </article>
-
-        <article class="w40 card-plat mgt50">
-            <img src="asset/2148875285.jpg" alt="Croquis du projet" class="w100 br-20">
-        <div class="pad-30">
-            <h2 class="bold mgb15 clr-white">Coxinha</h2>
-                <div class="flex space-between align-center">
-                    <p class="clr-white">
-                        Craquez pour nos coxinhas, des petites bouchées de poulet assaisonné, enveloppées dans une pâte dorée et croustillante. Parfaites en entrée ou en apéritif.
-                    </p>
-                </div>
-        </div>
-        </article>
-
-        <article class="w40 card-plat mgt50">
-            <img src="asset/2148875285.jpg" alt="Croquis du projet" class="w100 br-20">
-        <div class="pad-30">
-            <h2 class="bold mgb15 clr-white">Pão de Queijo</h2>
-                <div class="flex space-between align-center">
-                    <p class="clr-white">
-                        Goûtez à nos pães de queijo, de délicieux petits pains au fromage brésiliens. Légers et moelleux, ils sont parfaits pour accompagner vos repas ou en snack.
-                    </p>
-                </div>
-        </div>
-        </article>
-        
-        <article class="w40 card-plat mgt50">
-            <img src="asset/2148875285.jpg" alt="Croquis du projet" class="w100 br-20">
-        <div class="pad-30">
-            <h2 class="bold mgb15 clr-white">Caipirinha</h2>
-                <div class="flex space-between align-center">
-                    <p class="clr-white">
-                        Rafraîchissez-vous avec notre caipirinha, un cocktail brésilien classique à base de cachaça, de sucre et de citron vert. L'accompagnement parfait pour vos plats.
-                    </p>
-                </div>
-        </div>
-        </article>
+    <h2 class="txt-center mgt128">NOS PLATS</h2>
+<div  id="card-plats" class="d-grid grid-cols-3 gap20 mgt50">
 </div>
 </section>
 
@@ -125,144 +54,72 @@
 
 <section class="container1000 mgt128 mgb50">
     <h2 class="txt-center mgt30">NOS SERVICES PROPOSER </h2>
-    <h2 class="txt-center mgb30 clr-white">services</h2>
+
 
     <!-- Le conteneur de la grille-->
-    <div class="d-grid grid-cols-3 gap20 mgt50">
+    <div   id="card-services" class="d-grid grid-cols-3 gap20 mgt50">
 
-        <!--CARTE 1 : Événements Culturels -->
-        <a href="" class="txt-none">
-        <div class="bento-card pos-rel direc-col just-end pad-30 bg-boxe">
-            <img src="asset/959792-le-grand-bazar-du-bresil-l-evenement-gratuit-qui-celebre-la-culture-bresilienne-a-aubervilliers.jpg" alt="" class="img-grid w100">
-            <div class="card-overlay"></div> <!-- Filtre sombre -->
-            <div class="pos-rel">
-                 <!-- Texte au premier plan -->
-                <h3 class="majuscule clr-white mgb15">Événements Culturels</h3>
-                <p class="clr-white">Participez à nos événements culturels pour vivre l'ambiance du Brésil. Musique live, danse, et dégustation de plats authentiques pour une expérience immersive.</p>
-            </div>
-        </div>
-        </a>
-        <!-- CARTE 2 : Cours de Cuisine -->
-        <a href="" class="txt-none">
-        <div class="bento-card br-20  pos-rel direc-col just-end pad-30 bg-asia">
-            <img src="asset/cour de cuissine.jpg" alt="" class="img-grid w100">
-            <div class="card-overlay"></div>
-            <div class="pos-rel z-1">
-                <h3 class="majuscule clr-white mgb15">Cours de Cuisine</h3>
-                <p class="clr-white">Apprenez à cuisiner les plats brésiliens avec nos cours de cuisine. Nos chefs vous guideront à travers les techniques et les saveurs de la cuisine brésilienne.</p>
-            </div>
-        </div>
-        </a>
-        <!-- CARTE 3: Privatisation d'Espace -->
-        <a href="" class="txt-none">
-        <div class="bento-card pos-rel direc-col just-end pad-30 bg-cine">
-            <img src="asset/salle5_3_141761.webp" alt="" class="img-grid w100">
-            <div class="card-overlay"></div>
-            <div class="pos-rel z-1">
-                <h3 class="majuscule clr-white mgb15"> Privatisation d'Espace</h3>
-                <p class="clr-white">Privatisez un espace pour vos événements spéciaux. Anniversaires, réunions d'affaires ou célébrations, nous créons une atmosphère brésilienne pour rendre votre occasion mémorable.</p>
-            </div>
-        </div>
-        </a>
+    </div>
 </section>
 
 <!-- TEMOIGNAGES -->
  <section id="Temoignages" class=" mgt128 mgb50 container-1200 ">
-
         <h2 class="txt-center mgb50">Temoignages</h2>
 
-        <div class="w100 flex space-between align-center">
-            <!-- CARD 1 -->
-             <i class="ph-fill ph-arrow-fat-lines-left"></i>
-
-            <div class="w30 flex gap16 card-tem">
-
-                <div class="flex align-center w50">
-                    <img src="asset/Photo by Abhishek Upadhyay.png"
-                        alt="Petit carte de Temoignages" class="w30">
-                    <div class="w60 ml15">
-                        <h3 class="txt-size">Mathilde</h3>
-                        <p>Rénovation d'appartement</p>
-                    </div>
-                </div>
-                <p class="mgt15">Clémence a su repenser notre espace avec beaucoup d'intelligence et de
-                    goût. Le résultat est à la fois pratique et sublime.</p>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="w30 flex gap16 card-tem">
-                <div class="flex align-center w50">
-                    <img src="asset/Photo by Bach Tran.png"
-                        alt="Petit carte de Temoignages" class="w30">
-                    <div class="w60 ml15">
-                        <h3>Olivier</h3>
-                        <p>Aménagement de bureau</p>
-                    </div>
-                </div>
-                <p class="mgt15">Un vrai sens du détail et une belle écoute de nos besoins. Les meubles sur
-                    mesure sont parfaits et l'espace respire.</p>
-            </div>
-            
-            <!-- CARD 3 -->
-            <div class="w30 flex gap16 card-tem">
-                <div class="flex align-center w50">
-                    <img src="asset/Photo by Nickolas Nikolic.png" alt="Petit carte de Temoignages"
-                        class="w30">
-                    <div class="w60 ml15">
-                        <h3 class="txt-size">Sonia</h3>
-                        <p>Décoration intérieure</p>
-                    </div>
-                </div>
-                <p class="mgt15">J'adore la nouvelle ambiance de mon salon : couleurs apaisantes, lumière
-                    retravaillée, et des matières nobles. Je recommande à 100 %.</p>
-            </div>
-            <i class="ph-fill ph-arrow-fat-line-right"></i>
+        <div  id="cards-temoignages" class="w100 flex space-between align-center">
         </div>
+
+<div class="swiper mySwiper mgt128 mgb128 ">
+        <div id="promesseClients" class="swiper-wrapper">
+        </div>
+
+</div>
+
 </section>
 
 
 
-    <footer id="Contactez-nous" class="flex container-1200 mt-200 radius-brd  clr-blue pad-50 align-center">
+<footer id="Contactez-nous" class="flex container-1200 mt-200 radius-brd  clr-blue pad-50 align-center">
 
-        <div class=" w100 flex space-between ">
+        <div class=" w100 flex space-between  ">
             <!-- gauche -->
-            <div class=" w48">
-                    <h2 class="mb-16">Prêts à travailler ensemble ?</h2>
+            <div class="w48">
+                    <h2 class="mgb15">Prêts à travailler ensemble ?</h2>
 
-                    <p class="mb-16">Une idée, un projet, une envie de collaboration ?
+                    <p class="mgb15">Une idée, un projet, une envie de collaboration ?
                         Contactez-nous, nous serons ravis <br> d'en discuter et de voir
                         comment avancer ensemble. <br> Laissez votre contact téléphonique et je vous rappellerai.</p>
 
                     <div class="flex gap16">
-                        <a href="#" class="txt-none clr-white">
+                        <a href="#" class="txt-none clr-white icon-size">
                             <i class="ph-fill ph-discord-logo"></i>
                         </a>
-                        <a href="#" class="txt-none clr-white">
+                        <a href="#" class="txt-none clr-white icon-size">
                             <i class="ph-fill ph-messenger-logo"></i>
                         </a>
-                        <a href="#" class="txt-none clr-white">
+                        <a href="#" class="txt-none clr-white icon-size">
                             <i class="ph-fill ph-dribbble-logo"></i>
                         </a>
-                        <a href="#" class="txt-none clr-white">
+                        <a href="#" class="txt-none clr-white icon-size">
                             <i class="ph-fill ph-instagram-logo"></i>
                         </a>
-                        <a href="#" class="txt-none clr-white">
+                        <a href="#" class="txt-none clr-white icon-size">
                             <i class="ph-fill ph-tiktok-logo"></i>
                         </a>
                     </div>
             </div>
              <!-- droite -->
-            <div class="flex  gap20  card">
-                <input type="text" value="Nom" class="w100 input">
+            <div class="flex gap20 card">
+                <input type="text" value="Nom & prenom" class="w100 input">
                 <input type="text" value="Téléphone" class="w100 input">
                 <input type="text" value="Email" class="w100 input">
                 <input type="text" value="Message" class="w100 input">
-                <a href="#" class="txt-none btn-footer mt-20 ">Envoyer</a>
+                <a href="#" class="txt-none btn-footer mgt15 ml160 ">Envoyer</a>
             </div>
-
+                
         </div>
 
 
-    </footer>
+</footer>
 </body>
 </html>

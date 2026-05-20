@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Knewave&family=Permanent+Marker&display=swap');
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*------------------------- 
             HEADER 
 ---------------------------*/
@@ -21,9 +23,56 @@ header{
 }
 
 body{
-    background: linear-gradient(to top, rgb(228, 255, 50) 0%, rgb(18, 93, 63) 40%);
+    background: linear-gradient(to top, rgb(71 195 113) 0%, rgb(18, 93, 63) 40%);
     background-attachment: fixed;
 }
+h2{
+font-family: "Permanent Marker", cursive;
+
+}
+h1{
+font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(228, 255, 50);
+}
+.hero-p{
+    font-family: "Carter One", system-ui;
+    font-weight: 600;
+    color: #ffffff;
+}
+.p-font{
+    font-family: "Carter One", system-ui;
+    font-weight: 600;
+    color: #1c2586;
+}
+
+.icon-size{
+    font-size: 22px;
+}
+.icon-taille{
+    font-size: 50px;
+}
+.card-follow{
+    border: 1px solid ;
+    border-radius: 25px;
+    padding: 5px;
+    background-color: rgb(10, 150, 94);
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+.center-y{
+  top: 50%;
+  transform: translateY(-50%);
+}
+.right-50{
+  right: 50px;
+}
+.pos-abs{
+  position: absolute;
+}
+
 /* ----------------------------
             COLORS
 -------------------------------*/
@@ -36,14 +85,14 @@ body{
 .clr-grey {
     color: #4a4a4a; 
 }
-.clr-accent {
-    color: #fa526c; 
-}
 .clr-white{
     color: white;
 }
 .clr-blue{
     background-color:  rgb(0 148 64);
+}
+.bg-green{
+    background-color: rgb(10, 150, 94);
 }
 /*------------------------------
             TEXTE
@@ -220,12 +269,16 @@ margin-bottom: 50px;
     justify-content: column;
 }
 
+.space-around{
+justify-content: space-around;
+}
+
 
 /*---------------------------
             HERO
 -----------------------------*/
 .hero-bg{
-    background-image: url('asset/332802.jpg');
+    background-image: url('asset/bg-hero.jpg');
     background-size: cover;
     background-position: bottom;
  
@@ -265,7 +318,11 @@ margin-bottom: 50px;
 .br-20 {
     border-radius: 20px;
 }
-
+.card-promesse{
+    background-color: rgb(102, 255, 102);
+    border-radius: 20px;
+    padding: 90px;
+}
 
 /*---------------------------
         SERVICES
@@ -328,6 +385,10 @@ margin-bottom: 50px;
 .ml15{
     margin-left: 15px;
 }
+
+/*---------------------------
+        footer
+-----------------------------*/
 .btn-footer{
     color: white;
     background-color: #2e2a26;
@@ -335,4 +396,11 @@ margin-bottom: 50px;
     border-radius: 5px;
 }
 
-
+.input{
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+}
+.ml160{
+    margin-left: 160px;
+}
