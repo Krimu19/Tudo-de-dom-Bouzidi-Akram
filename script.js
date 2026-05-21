@@ -50,11 +50,10 @@ function afiicherServices (tableauServices){
         tableauServices.forEach(service => {
         let servicesListe =`        
         <a href="" class="txt-none">
-        <div class="bento-card pos-rel direc-col just-end pad-30 bg-boxe">
+        <div class="bento-card pos-rel direc-col just-end pad-30">
             <img src="asset/959792-le-grand-bazar-du-bresil-l-evenement-gratuit-qui-celebre-la-culture-bresilienne-a-aubervilliers.jpg" alt="" class="img-grid w100">
             <div class="card-overlay"></div> <!-- Filtre sombre -->
             <div class="pos-rel">
-                 <!-- Texte au premier plan -->
                 <h3 class="majuscule clr-white mgb15">${service.nom}</h3>
                 <p class="clr-white">${service.desc}</p>
             </div>
@@ -96,9 +95,9 @@ function afiicherhero (tableauHero){
             <p class="hero-p">${tableauHero.texteAccroche}</p>
             <button class="pad-16 br-20 bg-green bold clr-white">${tableauHero.texteBouton}</button>
         </div>
-        <div class="flex card-follow">
+        <div class="card-follow">
 
-            <div class="column w30">
+            <div class="flex direc-col">
                 <a href="" class="txt-none">
                 <i class="ph-fill ph-instagram-logo icon-size clr-dark"></i>
                 </a>
@@ -123,7 +122,7 @@ function afiicherPremesse (tableauPromesse){
         let promesseListe =`
         
                         <div class="swiper-slide">
-                            <div class="card-promesse w100 flex align-center gap30">
+                            <div class="card-promesse w60 flex align-center gap30">
                                 <i class="ph-fill ph-bowl-food icon-taille"></i>
                                 <h3 class="txt-center ">${tableauPromesse.promessesClient[0]}</h3>
                             </div>
@@ -131,16 +130,16 @@ function afiicherPremesse (tableauPromesse){
 
 
                         <div class="swiper-slide">
-                            <div class="card-promesse w100 flex align-center gap30">
+                            <div class="card-promesse w60 flex align-center gap30">
                                 <i class="ph-fill ph-sunglasses icon-taille"></i>
                                 <h3 class="txt-center ">${tableauPromesse.promessesClient[1]}</h3>
                             </div>
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="card-promesse w100 flex align-center gap30">
+                            <div class="card-promesse w60 flex align-center gap30">
                                 <i class="ph-fill ph-cooking-pot icon-taille"></i>
-                                <h3 class="txt-center mgt30">${tableauPromesse.promessesClient[2]}</h3>
+                                <h3 class="txt-center">${tableauPromesse.promessesClient[2]}</h3>
                             </div> 
                         </div>`
 

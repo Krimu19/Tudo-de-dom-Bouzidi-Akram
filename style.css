@@ -51,7 +51,7 @@ font-family: "Knewave", system-ui;
     font-size: 22px;
 }
 .icon-taille{
-    font-size: 50px;
+    font-size: 25px;
 }
 .card-follow{
     border: 1px solid ;
@@ -93,6 +93,9 @@ font-family: "Knewave", system-ui;
 }
 .bg-green{
     background-color: rgb(10, 150, 94);
+}
+.clr-yellow{
+    color: rgb(228, 255, 50);
 }
 /*------------------------------
             TEXTE
@@ -299,6 +302,13 @@ justify-content: space-around;
     background-color:#3B3287;
     border-radius: 20px;
 }
+
+.flag-brazil{
+    position: fixed;
+    top: 55%;
+    left: -70px;
+    transform: rotate(19deg);
+}
 /*---------------------------
         Plats
 -----------------------------*/
@@ -311,17 +321,12 @@ justify-content: space-around;
 }
 .h50{
     height: 50%;
-}
+}   
 .overflow-hidden {
     overflow: hidden; /* Empêche l'image de dépasser des bords arrondis */
 }
 .br-20 {
     border-radius: 20px;
-}
-.card-promesse{
-    background-color: rgb(102, 255, 102);
-    border-radius: 20px;
-    padding: 90px;
 }
 
 /*---------------------------
@@ -378,13 +383,22 @@ justify-content: space-around;
 -----------------------------*/
 
 .card-tem{ 
-    background-color: #3B3287 ;
+    background-color: rgb(102, 255, 102) ;
     padding: 32px 10px;
     border-radius: 10px;
 }
 .ml15{
     margin-left: 15px;
 }
+.ml250{
+    margin-left: 250px;
+}
+.card-promesse{
+    background-color: rgb(228, 255, 50);
+    border-radius: 20px;
+    padding: 90px;
+}
+
 
 /*---------------------------
         footer
