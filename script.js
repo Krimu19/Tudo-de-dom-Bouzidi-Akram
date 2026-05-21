@@ -122,7 +122,7 @@ function afiicherPremesse (tableauPromesse){
 
         let promesseListe =`
         
-                        <div class="swiper-slide ">
+                        <div class="swiper-slide">
                             <div class="card-promesse w100 flex align-center gap30">
                                 <i class="ph-fill ph-bowl-food icon-taille"></i>
                                 <h3 class="txt-center ">${tableauPromesse.promessesClient[0]}</h3>
