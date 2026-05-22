@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tudo de Bom </title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -27,14 +27,14 @@
     </a>
     <nav class="flex gap30">
         <a href="#Accueil" class="txt-none clr-white">Accueil</a>
-        <a href="#Mes projets" class="txt-none clr-white">Mes projets</a>
-        <a href="#À propos de moi" class="txt-none clr-white">À propos de moi</a>
-        <a href="#Contact" class="txt-none clr-white">Contact</a>
+        <a href="#Nos plats" class="txt-none clr-white">Nos plats</a>
+        <a href="#Services" class="txt-none clr-white">Services</a>
+        <a href="#Contactez-nous" class="txt-none clr-white">Contactez-nous</a>
     </nav>
 </header>
 
 <!-- SECTION HERO  -->
-<section class="hero-bg hero-container ">
+<section  id="Accueil" class="hero-bg hero-container ">
   
     <div id="hero" class="hero-text">
     </div>      
@@ -42,16 +42,16 @@
 <a href="#contact" class="flex align-center txt-none "></a>
 </section>
 
-<!-- plat -->
-<section class="container1000">
+<!-- SECTION PLATS -->
+<section id="Nos plats"  class="container1000">
     <h2 class="txt-center mgt128 clr-yellow">NOS PLATS</h2>
 <div  id="card-plats" class="d-grid grid-cols-3 gap20 mgt50">
 </div>
 </section>
 
-<!-- SERVICES -->
+<!-- SECTION SERVICES -->
 
-<section class="container1000 mgt128 mgb50">
+<section   id="Services" class="container1000 mgt128 mgb50">
     <h2 class="txt-center mgt30 clr-yellow">NOS SERVICES PROPOSER </h2>
 
 
@@ -61,14 +61,15 @@
     </div>
 </section>
 
-<!-- TEMOIGNAGES -->
+<!--  SECTION TEMOIGNAGES -->
  <section id="Temoignages" class=" mgt128 mgb50 container-1200 ">
         <h2 class="txt-center mgb50 clr-yellow">Temoignages</h2>
 
         <div  id="cards-temoignages" class="w100 flex space-between align-center">
         </div>
-
 <div class="swiper mySwiper mgt128 mgb128">
+        <h2 class="txt-center mgb50 clr-yellow">Promesses-Client</h2>
+
         <div id="promesseClients" class="swiper-wrapper ml250">
         </div>
 
@@ -76,7 +77,7 @@
 
 </section>
 
-<footer id="Contactez-nous" class="flex container-1200 mt-200 radius-brd  clr-blue pad-50 align-center">
+<footer id="Contactez-nous" class="flex container-1200 mt-200 radius-brd  bg-footer pad-50 align-center">
 
         <div class=" w100 flex space-between  ">
             <!-- gauche -->
@@ -106,17 +107,18 @@
                     </div>
             </div>
              <!-- droite -->
-            <div class="flex gap20 card">
+            <div class="flex gap20 card-input">
                 <input type="text" value="Nom & prenom" class="w100 input">
                 <input type="text" value="Téléphone" class="w100 input">
                 <input type="text" value="Email" class="w100 input">
                 <input type="text" value="Message" class="w100 input">
-                <a href="#" class="txt-none btn-footer mgt15 ml160 ">Envoyer</a>
+                <button class="pad-16 br-20 bg-green bold ml160 clr-white">Envoyer</button>
             </div>
                 
         </div>
 
 
 </footer>
+
 </body>
 </html>

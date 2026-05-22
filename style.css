@@ -28,7 +28,6 @@ body{
 }
 h2{
 font-family: "Permanent Marker", cursive;
-
 }
 h1{
 font-family: "Knewave", system-ui;
@@ -36,17 +35,23 @@ font-family: "Knewave", system-ui;
   font-style: normal;
   color: rgb(228, 255, 50);
 }
+.h3-feijoada{
+    font-family: cursive;
+    font-size: 25px;
+}
+.family-txt{
+    font-family:cursive;
+    font-size: 16px;
+}
+.p-feijoada{
+    color: rgb(228, 255, 50);
+    font-family: cursive;
+}
 .hero-p{
     font-family: "Carter One", system-ui;
     font-weight: 600;
     color: #ffffff;
 }
-.p-font{
-    font-family: "Carter One", system-ui;
-    font-weight: 600;
-    color: #1c2586;
-}
-
 .icon-size{
     font-size: 22px;
 }
@@ -62,33 +67,17 @@ font-family: "Knewave", system-ui;
     top: 50%;
     right: 0;
 }
-.center-y{
-  top: 50%;
-  transform: translateY(-50%);
-}
-.right-50{
-  right: 50px;
-}
-.pos-abs{
-  position: absolute;
-}
 
 /* ----------------------------
             COLORS
 -------------------------------*/
-.bg-white {
-    background-color: #ffffff;
-}
 .clr-dark {
     color: #1a1a1a; 
-}
-.clr-grey {
-    color: #4a4a4a; 
 }
 .clr-white{
     color: white;
 }
-.clr-blue{
+.bg-footer{
     background-color:  rgb(0 148 64);
 }
 .bg-green{
@@ -96,6 +85,17 @@ font-family: "Knewave", system-ui;
 }
 .clr-yellow{
     color: rgb(228, 255, 50);
+}
+.bg-plat-fei{
+    background-color: rgb(8, 154, 105);
+    padding: 10px ;
+    border-radius: 20px;
+}
+.bg-fei{
+    background-color: rgb(8, 154, 105);
+    padding: 10px ;
+    width: 60%;
+    border-radius: 0px  40px  80px 20px;
 }
 /*------------------------------
             TEXTE
@@ -243,9 +243,7 @@ margin-bottom: 50px;
 .gap150{
     gap: 150px;
 }
-.hgt100{
-    height: 100px;
-}
+
 
 
 /*-----------------------
@@ -284,6 +282,7 @@ justify-content: space-around;
     background-image: url('asset/bg-hero.jpg');
     background-size: cover;
     background-position: bottom;
+    background-repeat: no-repeat;
  
 }
 .hero-container{
@@ -293,14 +292,8 @@ justify-content: space-around;
   height: 100vh;
 }
 .hero-text{
-    max-width: 950px;
-    margin-left: 30px;
-    
-}
-
-.card-plat{ 
-    background-color:#3B3287;
-    border-radius: 20px;
+    width: 900px;
+    margin-left: 30px;  
 }
 
 .flag-brazil{
@@ -309,29 +302,11 @@ justify-content: space-around;
     left: -70px;
     transform: rotate(19deg);
 }
-/*---------------------------
-        Plats
------------------------------*/
-
-.card{ 
-    background-color: rgb(68 65 62);
-    padding: 65px 25px;
-    border-radius: 10px;
-    width: 40%;
-}
-.h50{
-    height: 50%;
-}   
-.overflow-hidden {
-    overflow: hidden; /* Empêche l'image de dépasser des bords arrondis */
-}
-.br-20 {
-    border-radius: 20px;
-}
 
 /*---------------------------
-        SERVICES
+        PLATS & SERVICES 
 -----------------------------*/
+
 .d-grid { 
     display: grid; 
 }
@@ -342,7 +317,7 @@ justify-content: space-around;
     border: 1px solid rgb(72 75 99); 
 }
 .bento-card:hover {
-    transform: scale(1.02); /* Grossit très légèrement au survol */
+    transform: translate(12px, 10px); /* effet de transition x et y au survol de la grid */
 }
 .grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
@@ -368,19 +343,20 @@ justify-content: space-around;
 .just-end { 
     justify-content: flex-end; /* Pousse le texte vers le bas */
 } 
-
-/* Positions et Superposition */
-
+.br-20 {
+    border-radius: 20px;
+}
 .pos-rel { 
     position: relative; 
 }
-.pos-abs { 
-    position: absolute; 
+.card-plat{ 
+    background-color: rgb(250 185 67);
+    border-radius: 20px;
 }
 
-/*---------------------------
-        temoignages
------------------------------*/
+/*---------------------------------------
+        TEMOIGNAGES & PROMESSES CLIENTS
+-----------------------------------------*/
 
 .card-tem{ 
     background-color: rgb(102, 255, 102) ;
@@ -401,15 +377,20 @@ justify-content: space-around;
 
 
 /*---------------------------
-        footer
+        FOOTER
 -----------------------------*/
 .btn-footer{
     color: white;
-    background-color: #2e2a26;
+    background-color: rgb(10, 150, 94);
     padding: 16px;
     border-radius: 5px;
 }
-
+.card-input{ 
+    background-color: rgb(68 65 62);
+    padding: 65px 25px;
+    border-radius: 10px;
+    width: 40%;
+}
 .input{
     padding: 10px 5px;
     margin-bottom: 5px;
