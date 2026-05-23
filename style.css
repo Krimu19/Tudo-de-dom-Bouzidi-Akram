@@ -361,7 +361,7 @@ justify-content: space-around;
     flex-direction: column; 
 }
 .just-end { 
-    justify-content: flex-end; /* Pousse le texte vers le bas */
+    justify-content: flex-end; 
 } 
 
 /* Positions et Superposition */
@@ -404,46 +404,3 @@ justify-content: space-around;
 .ml160{
     margin-left: 160px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
